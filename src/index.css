@@ -104,6 +104,19 @@ button {
   line-height: 1.7;
 }
 
+/* Mobile tap target - ensures iOS respects touch target sizes */
+@supports (-webkit-touch-callout: none) {
+  button, a {
+    cursor: pointer;
+  }
+}
+
+/* Prevent horizontal overflow on mobile */
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;

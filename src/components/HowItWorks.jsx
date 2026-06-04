@@ -76,7 +76,7 @@ export default function HowItWorks() {
             />
           </div>
 
-          <div className="flex flex-col gap-16">
+          <div className="flex flex-col gap-10 sm:gap-16">
             {steps.map((step, i) => (
               <motion.div
                 key={step.number}
@@ -84,21 +84,21 @@ export default function HowItWorks() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: '-80px' }}
                 transition={{ duration: 0.7, delay: i * 0.15 }}
-                className="relative flex items-start gap-6 md:gap-8"
+                className="relative flex items-start gap-4 sm:gap-6 md:gap-8"
               >
                 {/* Number */}
-                <div className="relative z-10 flex-shrink-0 w-[88px] h-[88px] rounded-2xl bg-gradient-to-br from-white/[0.06] to-white/[0.02] border border-white/[0.08] flex items-center justify-center">
-                  <span className="font-[family-name:var(--font-serif)] text-2xl font-bold bg-gradient-to-r from-[#6c63ff] to-[#3a7bd5] bg-clip-text text-transparent">
+                <div className="relative z-10 flex-shrink-0 w-14 h-14 sm:w-[72px] sm:h-[72px] md:w-[88px] md:h-[88px] rounded-xl sm:rounded-2xl bg-gradient-to-br from-white/[0.06] to-white/[0.02] border border-white/[0.08] flex items-center justify-center">
+                  <span className="font-[family-name:var(--font-serif)] text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-[#6c63ff] to-[#3a7bd5] bg-clip-text text-transparent">
                     {step.number}
                   </span>
                 </div>
 
                 {/* Content */}
-                <div className="pt-4">
-                  <h3 className="text-xl font-semibold text-white mb-2 font-[family-name:var(--font-serif)]">
+                <div className="pt-1 sm:pt-2 md:pt-4">
+                  <h3 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-1 sm:mb-2 font-[family-name:var(--font-serif)]">
                     {step.title}
                   </h3>
-                  <p className="text-gray-400 leading-relaxed max-w-md">
+                  <p className="text-xs sm:text-sm md:text-base text-gray-400 leading-relaxed max-w-md">
                     {step.description}
                   </p>
                 </div>

@@ -98,7 +98,7 @@ export default function ValueProp() {
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.7, delay: i * 0.15 }}
               whileHover={{ y: -4 }}
-              className="group relative p-8 md:p-10 rounded-2xl bg-gradient-to-b from-white/[0.04] to-white/[0.01] border border-white/[0.06] hover:border-[#6c63ff]/20 transition-all duration-500"
+              className="group relative p-6 sm:p-8 md:p-10 rounded-2xl bg-gradient-to-b from-white/[0.04] to-white/[0.01] border border-white/[0.06] hover:border-[#6c63ff]/20 transition-all duration-500"
             >
               {/* Hover glow */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#6c63ff]/0 to-[#3a7bd5]/0 group-hover:from-[#6c63ff]/5 group-hover:to-[#3a7bd5]/5 transition-all duration-500" />

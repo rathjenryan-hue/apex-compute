@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const devices = [
   {
@@ -52,7 +52,7 @@ export default function DeviceShowcase() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.7 }}
-          className="text-center mb-12"
+          className="text-center mb-10 sm:mb-12"
         >
           <span className="section-label">Hardware</span>
           <h2 className="section-title">
@@ -68,20 +68,21 @@ export default function DeviceShowcase() {
           </p>
         </motion.div>
 
-        {/* Term Selector */}
+        {/* Term Selector - horizontally scrollable on mobile */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex items-center justify-center gap-2 mb-12"
+          className="flex items-center justify-start sm:justify-center gap-2 mb-10 sm:mb-12 overflow-x-auto px-1 pb-2 -mx-4 sm:mx-0 scrollbar-none"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
-          <span className="text-sm text-gray-500 mr-3">Term:</span>
+          <span className="text-xs sm:text-sm text-gray-500 mr-2 sm:mr-3 flex-shrink-0">Term:</span>
           {termLabels.map((label, i) => (
             <button
               key={label}
               onClick={() => setSelectedTerm(i)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+              className={`flex-shrink-0 px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-medium transition-all duration-300 ${
                 selectedTerm === i
                   ? 'bg-gradient-to-r from-[#6c63ff] to-[#3a7bd5] text-white shadow-lg shadow-[#6c63ff]/20'
                   : 'bg-white/5 text-gray-400 border border-white/10 hover:bg-white/10'
@@ -93,7 +94,7 @@ export default function DeviceShowcase() {
         </motion.div>
 
         {/* Device Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
           {devices.map((device, i) => {
             const monthlyPrice = Math.round(
               device.basePrice * termMultipliers[selectedTerm]
@@ -116,32 +117,33 @@ export default function DeviceShowcase() {
                     src={device.image}
                     alt={device.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
                   {/* Tag */}
-                  <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 text-xs font-medium text-gray-200">
+                  <div className="absolute top-3 left-3 sm:top-4 sm:left-4 px-2.5 sm:px-3 py-1 rounded-full bg-black/60 backdrop-blur-sm border border-white/10 text-[10px] sm:text-xs font-medium text-gray-200">
                     {device.tag}
                   </div>
 
                   {/* Type badge */}
-                  <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#6c63ff]/20 backdrop-blur-sm border border-[#6c63ff]/20 text-xs font-medium text-[#8b83ff]">
+                  <div className="absolute top-3 right-3 sm:top-4 sm:right-4 px-2.5 sm:px-3 py-1 rounded-full bg-[#6c63ff]/20 backdrop-blur-sm border border-[#6c63ff]/20 text-[10px] sm:text-xs font-medium text-[#8b83ff]">
                     {device.type}
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold text-white mb-3 font-[family-name:var(--font-serif)]">
+                <div className="p-4 sm:p-6">
+                  <h3 className="text-base sm:text-lg font-semibold text-white mb-2 sm:mb-3 font-[family-name:var(--font-serif)]">
                     {device.name}
                   </h3>
 
                   {/* Specs */}
-                  <div className="flex flex-wrap gap-2 mb-5">
+                  <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4 sm:mb-5">
                     {device.specs.map((spec) => (
                       <span
                         key={spec}
-                        className="px-2.5 py-1 rounded-md bg-white/5 border border-white/5 text-xs text-gray-400"
+                        className="px-2 sm:px-2.5 py-1 rounded-md bg-white/5 border border-white/5 text-[10px] sm:text-xs text-gray-400"
                       >
                         {spec}
                       </span>
@@ -151,17 +153,17 @@ export default function DeviceShowcase() {
                   {/* Price */}
                   <div className="flex items-end justify-between">
                     <div>
-                      <p className="text-2xl font-bold text-white">
+                      <p className="text-xl sm:text-2xl font-bold text-white">
                         ${monthlyPrice}
-                        <span className="text-sm font-normal text-gray-400">
+                        <span className="text-xs sm:text-sm font-normal text-gray-400">
                           /mo
                         </span>
                       </p>
-                      <p className="text-xs text-gray-500 mt-1">
+                      <p className="text-[10px] sm:text-xs text-gray-500 mt-0.5 sm:mt-1">
                         {termLabels[selectedTerm]} plan
                       </p>
                     </div>
-                    <button className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300 hover:bg-white/10 hover:text-white transition-all duration-300">
+                    <button className="px-3 sm:px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs sm:text-sm text-gray-300 hover:bg-white/10 hover:text-white transition-all duration-300 active:scale-95">
                       Select
                     </button>
                   </div>
@@ -176,7 +178,7 @@ export default function DeviceShowcase() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-center text-gray-500 text-sm mt-10"
+          className="text-center text-gray-500 text-xs sm:text-sm mt-8 sm:mt-10"
         >
           All devices include complimentary shipping, setup, and 24/7 priority
           support.
