@@ -18,10 +18,10 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{ backgroundColor: '#0a0a0a' }}
     >
-      {/* Background gradient orbs */}
+      {/* Background gradient orbs - constrained on mobile */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 -left-1/2 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-[#6c63ff]/10 to-transparent blur-[120px]" />
-        <div className="absolute bottom-1/4 -right-1/2 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-[#3a7bd5]/10 to-transparent blur-[100px]" />
+        <div className="absolute top-1/4 -left-1/4 sm:-left-1/2 w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] rounded-full bg-gradient-to-br from-[#6c63ff]/10 to-transparent blur-[100px] sm:blur-[120px]" />
+        <div className="absolute bottom-1/4 -right-1/4 sm:-right-1/2 w-[350px] sm:w-[500px] h-[350px] sm:h-[500px] rounded-full bg-gradient-to-br from-[#3a7bd5]/10 to-transparent blur-[80px] sm:blur-[100px]" />
       </div>
 
       {/* Animated grid lines */}
@@ -36,7 +36,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 pt-20 sm:pt-24 pb-12 text-center">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-5 sm:px-6 pt-16 sm:pt-24 pb-12 text-center">
         {/* Badge */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -70,7 +70,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-sm sm:text-base md:text-lg text-gray-400 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2 sm:px-0"
+          className="text-sm sm:text-base md:text-lg text-gray-400 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed"
         >
           Premium computing for the AI era. Get cutting-edge hardware delivered
           today — pay in predictable monthly installments over 2 to 5 years.

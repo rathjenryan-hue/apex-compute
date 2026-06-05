@@ -34,6 +34,8 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -42,8 +44,14 @@ body {
   color: var(--gray-100);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 ::selection {
@@ -71,12 +79,24 @@ button {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 20px;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 24px;
+  }
 }
 
 .section {
-  padding: 100px 0;
+  padding: 80px 0;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 100px 0;
+  }
 }
 
 .section-label {
@@ -90,7 +110,7 @@ button {
 
 .section-title {
   font-family: var(--font-serif);
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1.75rem, 5vw, 3.5rem);
   font-weight: 700;
   color: var(--white);
   line-height: 1.2;
@@ -98,7 +118,7 @@ button {
 }
 
 .section-subtitle {
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(0.875rem, 2vw, 1.2rem);
   color: var(--gray-400);
   max-width: 600px;
   line-height: 1.7;
@@ -111,8 +131,8 @@ button {
   }
 }
 
-/* Prevent horizontal overflow on mobile */
-img, svg, video {
+/* Prevent horizontal overflow on mobile - all media */
+img, svg, video, iframe {
   max-width: 100%;
   height: auto;
 }
