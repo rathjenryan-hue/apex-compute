@@ -86,13 +86,13 @@ export default function Hero() {
         >
           <a
             href="#pricing"
-            className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-gradient-to-r from-[#6c63ff] to-[#3a7bd5] text-white font-semibold text-sm sm:text-base hover:shadow-lg hover:shadow-[#6c63ff]/30 transition-all duration-300 active:scale-95 hover:scale-105 text-center"
+            className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-gradient-to-r from-[#6c63ff] to-[#3a7bd5] text-white font-medium text-sm sm:text-base hover:shadow-lg hover:shadow-[#6c63ff]/30 transition-all duration-300 active:scale-95 hover:scale-105 text-center"
           >
             Explore Plans
           </a>
           <a
             href="#devices"
-            className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-full border border-white/20 text-white font-semibold text-sm sm:text-base hover:bg-white/5 transition-all duration-300 active:scale-95 text-center"
+            className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-full border border-white/20 text-white font-medium text-sm sm:text-base hover:bg-white/5 transition-all duration-300 active:scale-95 text-center"
           >
             View Devices
           </a>
@@ -122,7 +122,7 @@ export default function Hero() {
             className="absolute -bottom-3 -left-2 sm:-bottom-6 sm:-left-6 px-3 py-2 sm:px-6 sm:py-4 rounded-lg sm:rounded-xl bg-black/80 backdrop-blur-xl border border-white/10 hidden sm:block"
           >
             <p className="text-[10px] sm:text-xs text-gray-400 mb-0.5 sm:mb-1">From</p>
-            <p className="text-base sm:text-xl md:text-2xl font-semibold text-white">
+            <p className="text-base sm:text-xl md:text-2xl font-medium text-white">
               $89<span className="text-xs sm:text-sm font-normal text-gray-400">/mo</span>
             </p>
           </motion.div>
@@ -134,7 +134,7 @@ export default function Hero() {
             className="absolute -bottom-3 -right-2 sm:-bottom-6 sm:-right-6 px-3 py-2 sm:px-6 sm:py-4 rounded-lg sm:rounded-xl bg-black/80 backdrop-blur-xl border border-white/10 hidden sm:block"
           >
             <p className="text-[10px] sm:text-xs text-gray-400 mb-0.5 sm:mb-1">Terms</p>
-            <p className="text-base sm:text-xl md:text-2xl font-semibold text-white">
+            <p className="text-base sm:text-xl md:text-2xl font-medium text-white">
               2–5 <span className="text-xs sm:text-sm font-normal text-gray-400">years</span>
             </p>
           </motion.div>

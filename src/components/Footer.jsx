@@ -28,8 +28,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1 mb-4 sm:mb-0">
             <a href="#" className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 rounded-lg overflow-hidden flex-shrink-0 ring-1 ring-white/10">
-                <img src="/images/apex-icon.png" alt="Apex Compute" className="w-full h-full object-cover" />
+              <div className="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0 ring-1 ring-white/10">
+                <img src="/images/apex-icon-dollar.png" alt="Apex Compute" className="w-full h-full object-cover" />
               </div>
               <span className="font-[family-name:var(--font-serif)] text-xl text-white tracking-tight">
                 Apex<span className="text-[#6c63ff]">.</span>
@@ -43,7 +43,7 @@ export default function Footer() {
           {/* Link groups */}
           {footerLinks.map((group) => (
             <div key={group.title}>
-              <h4 className="text-[10px] sm:text-xs font-semibold text-gray-300 uppercase tracking-wider mb-3 sm:mb-4">
+              <h4 className="text-[10px] sm:text-xs font-medium text-gray-300 uppercase tracking-wider mb-3 sm:mb-4">
                 {group.title}
               </h4>
               <ul className="space-y-2 sm:space-y-3">

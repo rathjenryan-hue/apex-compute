@@ -95,7 +95,7 @@ export default function HowItWorks() {
 
                 {/* Content */}
                 <div className="pt-1 sm:pt-2 md:pt-4">
-                  <h3 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-1 sm:mb-2 font-[family-name:var(--font-serif)]">
+                  <h3 className="text-base sm:text-lg md:text-xl font-medium text-white mb-1 sm:mb-2 font-[family-name:var(--font-serif)]">
                     {step.title}
                   </h3>
                   <p className="text-xs sm:text-sm md:text-base text-gray-400 leading-relaxed max-w-md">

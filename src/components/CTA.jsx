@@ -41,14 +41,14 @@ export default function CTA() {
         >
           <a
             href="#"
-            className="group relative w-full sm:w-auto px-6 sm:px-10 py-4 sm:py-5 rounded-full bg-gradient-to-r from-[#6c63ff] to-[#3a7bd5] text-white font-semibold text-sm sm:text-lg hover:shadow-xl hover:shadow-[#6c63ff]/30 transition-all duration-300 active:scale-95 hover:scale-105 text-center"
+            className="group relative w-full sm:w-auto px-6 sm:px-10 py-4 sm:py-5 rounded-full bg-gradient-to-r from-[#6c63ff] to-[#3a7bd5] text-white font-medium text-sm sm:text-lg hover:shadow-xl hover:shadow-[#6c63ff]/30 transition-all duration-300 active:scale-95 hover:scale-105 text-center"
           >
             <span className="relative z-10">Start Your Application</span>
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#8b83ff] to-[#5a93e8] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </a>
           <a
             href="#"
-            className="w-full sm:w-auto px-6 sm:px-10 py-4 sm:py-5 rounded-full border border-white/20 text-white font-semibold text-sm sm:text-lg hover:bg-white/5 transition-all duration-300 active:scale-95 text-center"
+            className="w-full sm:w-auto px-6 sm:px-10 py-4 sm:py-5 rounded-full border border-white/20 text-white font-medium text-sm sm:text-lg hover:bg-white/5 transition-all duration-300 active:scale-95 text-center"
           >
             Talk to Sales
           </a>
@@ -69,7 +69,7 @@ export default function CTA() {
             { value: '24/7', label: 'Priority Support' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-1 font-[family-name:var(--font-serif)]">
+              <p className="text-xl sm:text-2xl md:text-3xl font-medium text-white mb-1 font-[family-name:var(--font-serif)]">
                 {stat.value}
               </p>
               <p className="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wider">

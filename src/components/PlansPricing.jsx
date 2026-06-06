@@ -196,7 +196,7 @@ export default function PlansPricing() {
           >
             <a
               href="#cta"
-              className="inline-flex items-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-gradient-to-r from-[#6c63ff] to-[#3a7bd5] text-white font-semibold text-sm sm:text-base hover:shadow-lg hover:shadow-[#6c63ff]/30 transition-all duration-300 active:scale-95 hover:scale-105"
+              className="inline-flex items-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-gradient-to-r from-[#6c63ff] to-[#3a7bd5] text-white font-medium text-sm sm:text-base hover:shadow-lg hover:shadow-[#6c63ff]/30 transition-all duration-300 active:scale-95 hover:scale-105"
             >
               Apply Now — ${monthlyPayment}/mo
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="hidden sm:block">

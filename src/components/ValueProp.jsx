@@ -107,7 +107,7 @@ export default function ValueProp() {
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#6c63ff]/20 to-[#3a7bd5]/10 border border-white/5 flex items-center justify-center text-[#8b83ff] mb-6 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-[#6c63ff]/10 transition-all duration-300">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-3 font-[family-name:var(--font-serif)]">
+                <h3 className="text-xl font-medium text-white mb-3 font-[family-name:var(--font-serif)]">
                   {feature.title}
                 </h3>
                 <p className="text-gray-400 leading-relaxed text-sm md:text-base">

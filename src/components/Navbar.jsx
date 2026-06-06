@@ -46,16 +46,16 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-[64px] sm:h-[72px] flex items-center justify-between">
-        {/* Logo - brand image + wordmark */}
+        {/* Logo - dollar brand */}
         <a href="#" className="flex items-center gap-3 group z-10">
-          <div className="w-9 h-9 rounded-lg overflow-hidden flex-shrink-0 shadow-lg shadow-[#6c63ff]/20 ring-1 ring-white/10">
+          <div className="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0 ring-1 ring-white/10 shadow-lg shadow-[#6c63ff]/20">
             <img
-              src="/images/apex-icon.png"
+              src="/images/apex-icon-dollar.png"
               alt="Apex Compute"
               className="w-full h-full object-cover"
             />
           </div>
-          <span className="font-[family-name:var(--font-serif)] text-xl text-white tracking-tight drop-shadow-sm">
+          <span className="font-[family-name:var(--font-serif)] text-xl text-white tracking-tight">
             Apex<span className="text-[#6c63ff]">.</span>
           </span>
         </a>
@@ -79,29 +79,34 @@ export default function Navbar() {
           </a>
         </nav>
 
-        {/* Mobile Toggle - high visibility */}
+        {/* Mobile Toggle - POP design */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className={`md:hidden relative z-10 flex items-center justify-center w-12 h-12 rounded-xl transition-all duration-300 ${
             mobileOpen
-              ? 'bg-white/15 border-2 border-white/30'
-              : 'bg-white/[0.12] border-2 border-white/20 hover:bg-white/[0.18] active:bg-white/[0.25]'
-          } shadow-lg shadow-black/30`}
+              ? 'bg-white/25 border-2 border-white/40 shadow-lg shadow-white/10'
+              : 'bg-white/25 border-2 border-white/30 hover:bg-white/35 active:bg-white/40 shadow-lg shadow-black/30'
+          }`}
           aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           style={{ minWidth: 48, minHeight: 48 }}
         >
-          <div className="flex flex-col items-center justify-center gap-[5px]">
+          {/* Subtle glow ring */}
+          <div className={`absolute inset-0 rounded-xl blur-sm transition-opacity duration-300 ${
+            mobileOpen ? 'opacity-40 bg-white/20' : 'opacity-0'
+          }`} />
+
+          <div className="relative flex flex-col items-center justify-center gap-[6px]">
             <motion.span
-              animate={mobileOpen ? { rotate: 45, y: 7.5 } : { rotate: 0, y: 0 }}
-              className="block w-6 h-[3px] bg-white rounded-full origin-center drop-shadow-sm"
+              animate={mobileOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
+              className="block w-6 h-[3.5px] bg-white rounded-full origin-center"
             />
             <motion.span
               animate={mobileOpen ? { opacity: 0, width: 0 } : { opacity: 1, width: 24 }}
-              className="block h-[3px] bg-white rounded-full drop-shadow-sm"
+              className="block h-[3.5px] bg-white rounded-full"
             />
             <motion.span
-              animate={mobileOpen ? { rotate: -45, y: -7.5 } : { rotate: 0, y: 0 }}
-              className="block w-6 h-[3px] bg-white rounded-full origin-center drop-shadow-sm"
+              animate={mobileOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
+              className="block w-6 h-[3.5px] bg-white rounded-full origin-center"
             />
           </div>
         </button>
@@ -123,7 +128,7 @@ export default function Navbar() {
               {/* Mobile brand */}
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg overflow-hidden ring-1 ring-white/10">
-                  <img src="/images/apex-icon.png" alt="" className="w-full h-full object-cover" />
+                  <img src="/images/apex-icon-dollar.png" alt="" className="w-full h-full object-cover" />
                 </div>
                 <span className="font-[family-name:var(--font-serif)] text-2xl text-white tracking-tight">
                   Apex<span className="text-[#6c63ff]">.</span>
@@ -149,7 +154,7 @@ export default function Navbar() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.35 }}
-                className="mt-2 text-base font-semibold px-12 py-4 rounded-full bg-gradient-to-r from-[#6c63ff] to-[#3a7bd5] text-white shadow-xl shadow-[#6c63ff]/30"
+                className="mt-2 text-base font-medium px-12 py-4 rounded-full bg-gradient-to-r from-[#6c63ff] to-[#3a7bd5] text-white shadow-xl shadow-[#6c63ff]/30"
               >
                 Get Started
               </motion.a>

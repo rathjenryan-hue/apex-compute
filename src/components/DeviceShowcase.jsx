@@ -134,7 +134,7 @@ export default function DeviceShowcase() {
 
                 {/* Content */}
                 <div className="p-4 sm:p-6">
-                  <h3 className="text-base sm:text-lg font-semibold text-white mb-2 sm:mb-3 font-[family-name:var(--font-serif)]">
+                  <h3 className="text-base sm:text-lg font-medium text-white mb-2 sm:mb-3 font-[family-name:var(--font-serif)]">
                     {device.name}
                   </h3>
 
