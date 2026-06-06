@@ -139,7 +139,7 @@ export default function PlansPricing() {
               <p className="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wider mb-1 sm:mb-2">
                 Monthly Payment
               </p>
-              <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1">
+              <p className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white mb-1">
                 ${monthlyPayment}
                 <span className="text-base sm:text-lg font-normal text-gray-400">/mo</span>
               </p>
@@ -159,7 +159,7 @@ export default function PlansPricing() {
               <p className="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wider mb-1 sm:mb-2">
                 Total Paid
               </p>
-              <p className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1">
+              <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-1">
                 ${totalPayment.toLocaleString()}
               </p>
               <p className="text-[10px] sm:text-xs text-gray-500">
@@ -178,7 +178,7 @@ export default function PlansPricing() {
               <p className="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wider mb-1 sm:mb-2">
                 Total Interest
               </p>
-              <p className="text-xl sm:text-2xl md:text-3xl font-bold text-[#8b83ff] mb-1">
+              <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-[#8b83ff] mb-1">
                 ${totalInterest.toLocaleString()}
               </p>
               <p className="text-[10px] sm:text-xs text-gray-500">

@@ -88,7 +88,7 @@ export default function HowItWorks() {
               >
                 {/* Number */}
                 <div className="relative z-10 flex-shrink-0 w-14 h-14 sm:w-[72px] sm:h-[72px] md:w-[88px] md:h-[88px] rounded-xl sm:rounded-2xl bg-gradient-to-br from-white/[0.06] to-white/[0.02] border border-white/[0.08] flex items-center justify-center">
-                  <span className="font-[family-name:var(--font-serif)] text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-[#6c63ff] to-[#3a7bd5] bg-clip-text text-transparent">
+                  <span className="font-[family-name:var(--font-serif)] text-lg sm:text-xl md:text-2xl font-semibold bg-gradient-to-r from-[#6c63ff] to-[#3a7bd5] bg-clip-text text-transparent">
                     {step.number}
                   </span>
                 </div>

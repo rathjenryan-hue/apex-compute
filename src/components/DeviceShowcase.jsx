@@ -153,7 +153,7 @@ export default function DeviceShowcase() {
                   {/* Price */}
                   <div className="flex items-end justify-between">
                     <div>
-                      <p className="text-xl sm:text-2xl font-bold text-white">
+                      <p className="text-xl sm:text-2xl font-semibold text-white">
                         ${monthlyPrice}
                         <span className="text-xs sm:text-sm font-normal text-gray-400">
                           /mo

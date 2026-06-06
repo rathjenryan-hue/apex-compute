@@ -28,10 +28,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1 mb-4 sm:mb-0">
             <a href="#" className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#6c63ff] to-[#3a7bd5] flex items-center justify-center shadow-lg shadow-[#6c63ff]/20 flex-shrink-0">
-                <span className="text-white text-xs font-bold">A</span>
+              <div className="w-9 h-9 rounded-lg overflow-hidden flex-shrink-0 ring-1 ring-white/10">
+                <img src="/images/apex-icon.png" alt="Apex Compute" className="w-full h-full object-cover" />
               </div>
-              <span className="font-[family-name:var(--font-serif)] text-xl font-bold text-white tracking-tight">
+              <span className="font-[family-name:var(--font-serif)] text-xl text-white tracking-tight">
                 Apex<span className="text-[#6c63ff]">.</span>
               </span>
             </a>

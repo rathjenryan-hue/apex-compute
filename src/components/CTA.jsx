@@ -69,7 +69,7 @@ export default function CTA() {
             { value: '24/7', label: 'Priority Support' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <p className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1 font-[family-name:var(--font-serif)]">
+              <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-1 font-[family-name:var(--font-serif)]">
                 {stat.value}
               </p>
               <p className="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wider">
