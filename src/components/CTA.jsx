@@ -9,7 +9,7 @@ export default function CTA() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-gradient-to-br from-[#6c63ff]/10 via-[#3a7bd5]/5 to-transparent blur-[150px]" />
       </div>
 
-      <div className="container relative z-10 max-w-4xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto px-5 sm:px-6 relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

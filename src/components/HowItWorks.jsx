@@ -44,7 +44,7 @@ export default function HowItWorks() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-[#6c63ff]/5 to-transparent blur-[120px]" />
       </div>
 
-      <div className="container relative z-10">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 relative z-10">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}

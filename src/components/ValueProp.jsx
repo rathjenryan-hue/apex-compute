@@ -65,7 +65,7 @@ export default function ValueProp() {
         <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-gradient-to-bl from-[#6c63ff]/5 to-transparent blur-[100px]" />
       </div>
 
-      <div className="container relative z-10">
+      <div className="max-w-6xl mx-auto px-5 sm:px-6 relative z-10">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
