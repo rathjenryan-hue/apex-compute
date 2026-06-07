@@ -1,223 +1,194 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apex Computer | Precision Tech Solutions</title>
-    <!-- Google Fonts -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Computer | High-End Computing Redefined</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-  </head>
-  <body class="bg-apex-neutral text-gray-900 font-sans">
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-      <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div class="flex items-center space-x-3">
-          <img src="/assets/logo.png" alt="Apex Computer Logo" class="h-10 w-auto">
-          <span class="text-2xl font-heading font-extrabold tracking-tight text-apex-navy">Apex Computer</span>
-        </div>
-        <div class="hidden md:flex space-x-8 font-semibold">
-          <a href="#home" class="hover:text-apex-blue transition-colors">Home</a>
-          <a href="#services" class="hover:text-apex-blue transition-colors">Services</a>
-          <a href="#about" class="hover:text-apex-blue transition-colors">About</a>
-          <a href="#contact" class="hover:text-apex-blue transition-colors">Contact</a>
-        </div>
-        <button class="bg-apex-blue text-white px-6 py-2 rounded-lg font-bold hover:bg-apex-navy transition-all shadow-md">
-          Get a Quote
-        </button>
-      </nav>
-    </header>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="bg-apex-dark text-apex-offwhite font-inter antialiased overflow-x-hidden">
 
-    <main>
-      <!-- Hero Section -->
-      <section id="home" class="relative bg-apex-navy text-white py-24 lg:py-40 overflow-hidden">
-        <div class="container mx-auto px-4 relative z-10">
-          <div class="max-w-3xl">
-            <h1 class="text-5xl lg:text-8xl font-heading font-extrabold mb-8 leading-tight">
-              Precision at <span class="text-apex-blue">Every Level.</span>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-apex-dark/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <img src="/assets/logo_dark_theme.png" alt="Apex Logo" class="h-10 w-auto">
+                <span class="font-montserrat font-extrabold text-2xl tracking-tighter">APEX<span class="text-apex-blue">COMPUTER</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide">
+                <a href="#products" class="hover:text-apex-blue transition-colors">WORKSTATIONS</a>
+                <a href="#technology" class="hover:text-apex-blue transition-colors">TECHNOLOGY</a>
+                <a href="#financing" class="hover:text-apex-blue transition-colors">INVESTMENT</a>
+                <a href="#" class="bg-apex-blue text-apex-dark px-5 py-2 rounded-full hover:bg-white transition-all transform hover:scale-105">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <img src="/assets/hero_dark_polished.png" alt="Hero background" class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-t from-apex-dark via-apex-dark/20 to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+            <h1 class="font-montserrat font-extrabold text-6xl md:text-8xl mb-6 tracking-tighter opacity-0 animate-fade-in">
+                POWER <span class="text-apex-blue">UNBOUND</span>
             </h1>
-            <p class="text-xl text-blue-100 mb-12 leading-relaxed max-w-2xl">
-              Apex Computer delivers high-performance technology services for businesses and individuals. From custom workstation builds to secure network infrastructure, we define peak performance.
+            <p class="text-xl md:text-2xl text-apex-silver max-w-2xl mx-auto mb-10 opacity-0 animate-slide-up" style="animation-delay: 0.3s">
+                Engineered for the visionaries. High-performance workstations for creators, developers, and data scientists.
             </p>
-            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
-              <a href="#services" class="bg-apex-blue text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-apex-navy transition-all text-center shadow-lg">
-                Our Services
-              </a>
-              <a href="#contact" class="border-2 border-white text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-apex-navy transition-all text-center">
-                Get Started
-              </a>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 opacity-0 animate-slide-up" style="animation-delay: 0.6s">
+                <a href="#products" class="px-8 py-4 bg-apex-blue text-apex-dark font-bold rounded-lg hover:bg-white transition-all transform hover:scale-105">EXPLORE THE LINEUP</a>
+                <a href="#financing" class="px-8 py-4 border border-apex-blue text-apex-blue font-bold rounded-lg hover:bg-apex-blue hover:text-apex-dark transition-all">VIEW FINANCING</a>
             </div>
-          </div>
         </div>
-        <!-- Background Decoration -->
-        <div class="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none">
-           <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" class="w-full h-full text-white">
-              <path d="M0,200 Q100,100 200,200 T400,200" fill="none" stroke="currentColor" stroke-width="2" />
-              <path d="M0,250 Q100,150 200,250 T400,250" fill="none" stroke="currentColor" stroke-width="2" />
-              <path d="M0,300 Q100,200 200,300 T400,300" fill="none" stroke="currentColor" stroke-width="2" />
-           </svg>
-        </div>
-      </section>
+    </section>
 
-      <!-- Services Section -->
-      <section id="services" class="py-24 bg-white">
-        <div class="container mx-auto px-4 text-center mb-20">
-          <h2 class="text-4xl lg:text-5xl font-heading font-extrabold mb-6 text-apex-navy">High-Performance Services</h2>
-          <p class="text-gray-600 max-w-2xl mx-auto text-lg italic">Built for stability. Engineered for speed.</p>
-        </div>
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div class="p-10 bg-apex-neutral rounded-2xl border border-gray-200 hover:border-apex-blue hover:shadow-2xl transition-all group">
-            <div class="w-16 h-16 bg-apex-navy text-apex-blue rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h.01"/><path d="M7 16V4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12"/><path d="M5 20h14a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2z"/></svg>
+    <!-- Product Showcase -->
+    <section id="products" class="py-24 bg-apex-dark">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="font-montserrat font-bold text-4xl mb-4">ELITE WORKSTATIONS</h2>
+                <div class="h-1 w-20 bg-apex-blue mx-auto"></div>
             </div>
-            <h3 class="text-2xl font-heading font-bold mb-4 text-apex-navy">Enterprise Support</h3>
-            <p class="text-gray-600 leading-relaxed text-lg">Comprehensive IT management and rapid response diagnostics for businesses that can't afford downtime.</p>
-          </div>
-          <div class="p-10 bg-apex-neutral rounded-2xl border border-gray-200 hover:border-apex-blue hover:shadow-2xl transition-all group">
-            <div class="w-16 h-16 bg-apex-navy text-apex-blue rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            </div>
-            <h3 class="text-2xl font-heading font-bold mb-4 text-apex-navy">Custom Workstations</h3>
-            <p class="text-gray-600 leading-relaxed text-lg">Bespoke high-performance PCs tailored for creative professionals, data scientists, and elite gaming.</p>
-          </div>
-          <div class="p-10 bg-apex-neutral rounded-2xl border border-gray-200 hover:border-apex-blue hover:shadow-2xl transition-all group">
-            <div class="w-16 h-16 bg-apex-navy text-apex-blue rounded-xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
-            </div>
-            <h3 class="text-2xl font-heading font-bold mb-4 text-apex-navy">Advanced Networking</h3>
-            <p class="text-gray-600 leading-relaxed text-lg">Secure, high-bandwidth wired and wireless networking solutions for demanding modern environments.</p>
-          </div>
-        </div>
-      </section>
 
-      <!-- About Section -->
-      <section id="about" class="py-24 bg-apex-neutral overflow-hidden">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
-          <div class="md:w-1/2 relative">
-            <div class="absolute -top-10 -left-10 w-40 h-40 bg-apex-blue opacity-10 rounded-full blur-3xl"></div>
-            <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-apex-navy opacity-10 rounded-full blur-3xl"></div>
-            <div class="bg-apex-navy rounded-3xl p-3 transform -rotate-2 shadow-2xl relative z-10">
-              <div class="bg-white rounded-2xl overflow-hidden transform rotate-2">
-                 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1000" alt="Advanced Electronics" class="w-full h-auto">
-              </div>
-            </div>
-          </div>
-          <div class="md:w-1/2">
-            <h2 class="text-4xl lg:text-5xl font-heading font-extrabold mb-8 text-apex-navy">About Apex Computer</h2>
-            <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-              Apex Computer was founded on the principle that technology should be an asset, not a bottleneck. For over a decade, we have been the silent partner for businesses requiring absolute precision and reliability in their digital infrastructure.
-            </p>
-            <p class="text-gray-600 text-lg mb-10 leading-relaxed">
-              Our certified specialists approach every challenge with an engineering mindset—optimizing every component and packet for peak performance.
-            </p>
-            <div class="grid grid-cols-2 gap-8">
-              <div class="border-l-4 border-apex-blue pl-6">
-                <h4 class="font-heading font-extrabold text-apex-navy text-4xl mb-2">12+</h4>
-                <p class="text-gray-500 font-semibold uppercase tracking-wider text-sm">Years Expertise</p>
-              </div>
-              <div class="border-l-4 border-apex-blue pl-6">
-                <h4 class="font-heading font-extrabold text-apex-navy text-4xl mb-2">1.5k</h4>
-                <p class="text-gray-500 font-semibold uppercase tracking-wider text-sm">Success Stories</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact" class="py-24 bg-white">
-        <div class="container mx-auto px-4 max-w-5xl">
-          <div class="bg-apex-navy rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
-            <div class="md:w-2/5 bg-apex-navy p-12 text-white relative">
-              <div class="relative z-10">
-                <h2 class="text-4xl font-heading font-extrabold mb-10">Connect With Our Team</h2>
-                <div class="space-y-8">
-                  <div class="flex items-start space-x-6 group">
-                     <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-apex-blue transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                     </div>
-                     <div>
-                        <p class="text-blue-200 text-sm font-semibold uppercase tracking-widest mb-1">Direct Line</p>
-                        <p class="text-xl font-bold">(555) 123-4567</p>
-                     </div>
-                  </div>
-                  <div class="flex items-start space-x-6 group">
-                     <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-apex-blue transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
-                     </div>
-                     <div>
-                        <p class="text-blue-200 text-sm font-semibold uppercase tracking-widest mb-1">Email Inquiry</p>
-                        <p class="text-xl font-bold">solutions@apexcomputer.com</p>
-                     </div>
-                  </div>
-                  <div class="flex items-start space-x-6 group">
-                     <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-apex-blue transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                     </div>
-                     <div>
-                        <p class="text-blue-200 text-sm font-semibold uppercase tracking-widest mb-1">Headquarters</p>
-                        <p class="text-xl font-bold">Tech Plaza, Silicon Valley</p>
-                     </div>
-                  </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Product 1 -->
+                <div class="group relative bg-apex-dark-card rounded-2xl overflow-hidden border border-white/5 hover:border-apex-blue/50 transition-all duration-500 reveal-on-scroll">
+                    <div class="p-8 pb-0">
+                        <h3 class="text-3xl font-bold mb-2">APEX ALPHA X</h3>
+                        <p class="text-apex-blue font-semibold mb-4">Portable Powerhouse</p>
+                        <p class="text-apex-silver mb-6">Uncompromising performance in a sleek metal chassis. Featuring the latest Intel Core i9 and RTX 4090 mobility.</p>
+                    </div>
+                    <img src="/assets/laptop_premium.png" alt="Apex Alpha X" class="w-full transform group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute bottom-8 right-8">
+                        <span class="text-2xl font-bold">From $5,499</span>
+                    </div>
                 </div>
-              </div>
-              <div class="absolute bottom-0 right-0 w-48 h-48 bg-apex-blue opacity-10 blur-3xl -mb-24 -mr-24"></div>
-            </div>
-            <div class="md:w-3/5 p-12 bg-white">
-              <form class="space-y-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div>
-                    <label class="block text-sm font-bold text-apex-navy uppercase tracking-wider mb-3">Full Name</label>
-                    <input type="text" class="w-full px-5 py-4 bg-apex-neutral border border-gray-200 rounded-xl focus:ring-2 focus:ring-apex-blue focus:border-transparent outline-none transition-all" placeholder="John Doe">
-                  </div>
-                  <div>
-                    <label class="block text-sm font-bold text-apex-navy uppercase tracking-wider mb-3">Business Email</label>
-                    <input type="email" class="w-full px-5 py-4 bg-apex-neutral border border-gray-200 rounded-xl focus:ring-2 focus:ring-apex-blue focus:border-transparent outline-none transition-all" placeholder="john@company.com">
-                  </div>
+
+                <!-- Product 2 -->
+                <div class="group relative bg-apex-dark-card rounded-2xl overflow-hidden border border-white/5 hover:border-apex-blue/50 transition-all duration-500 reveal-on-scroll" style="transition-delay: 0.2s">
+                    <div class="p-8 pb-0">
+                        <h3 class="text-3xl font-bold mb-2">APEX SENTINEL</h3>
+                        <p class="text-apex-blue font-semibold mb-4">Compact Desktop Workstation</p>
+                        <p class="text-apex-silver mb-6">Maximum density. Carbon fiber accents. Engineered for sustained 8K rendering and complex simulations.</p>
+                    </div>
+                    <img src="/assets/desktop_compact.png" alt="Apex Sentinel" class="w-full transform group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute bottom-8 right-8">
+                        <span class="text-2xl font-bold">From $8,299</span>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Reveal Section -->
+    <section id="technology" class="py-24 relative overflow-hidden bg-apex-navy">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-apex-blue via-transparent to-transparent"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 items-center gap-16">
                 <div>
-                  <label class="block text-sm font-bold text-apex-navy uppercase tracking-wider mb-3">Inquiry Type</label>
-                  <select class="w-full px-5 py-4 bg-apex-neutral border border-gray-200 rounded-xl focus:ring-2 focus:ring-apex-blue focus:border-transparent outline-none transition-all">
-                    <option>Hardware Solution</option>
-                    <option>Networking Project</option>
-                    <option>Support Contract</option>
-                    <option>Other</option>
-                  </select>
+                    <h2 class="font-montserrat font-bold text-4xl md:text-5xl mb-8 leading-tight">THE SILICON <br><span class="text-apex-blue">FRONTIER</span></h2>
+                    <div class="space-y-8">
+                        <div class="reveal-on-scroll">
+                            <h4 class="text-xl font-bold text-apex-blue mb-2">INTEL CORE i9-14900K</h4>
+                            <p class="text-apex-silver">24 Cores of pure processing dominance. Pushing frequencies beyond 6.0GHz for near-instantaneous compilation.</p>
+                        </div>
+                        <div class="reveal-on-scroll" style="transition-delay: 0.2s">
+                            <h4 class="text-xl font-bold text-apex-blue mb-2">NVIDIA RTX 4090</h4>
+                            <p class="text-apex-silver">24GB G6X VRAM. The ultimate platform for AI development and real-time ray-traced visualization.</p>
+                        </div>
+                        <div class="reveal-on-scroll" style="transition-delay: 0.4s">
+                            <h4 class="text-xl font-bold text-apex-blue mb-2">AMD RYZEN THREADRIPPER</h4>
+                            <p class="text-apex-silver">For the extreme multitaskers. Up to 96 cores for massive parallel compute tasks.</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                  <label class="block text-sm font-bold text-apex-navy uppercase tracking-wider mb-3">Detailed Message</label>
-                  <textarea class="w-full px-5 py-4 bg-apex-neutral border border-gray-200 rounded-xl h-40 focus:ring-2 focus:ring-apex-blue focus:border-transparent outline-none transition-all resize-none" placeholder="How can we optimize your environment?"></textarea>
+                <div class="relative reveal-on-scroll">
+                    <img src="/assets/laptop_closeup.png" alt="Hardware Detail" class="rounded-3xl border border-white/10 shadow-2xl shadow-apex-blue/20">
+                    <div class="absolute -bottom-6 -right-6 bg-apex-blue text-apex-dark p-8 rounded-2xl font-bold">
+                        <p class="text-4xl">99.9%</p>
+                        <p class="text-sm">UPTIME SLAS</p>
+                    </div>
                 </div>
-                <button type="submit" class="w-full bg-apex-blue text-white py-5 rounded-xl font-heading font-extrabold text-xl hover:bg-apex-navy transition-all shadow-xl hover:-translate-y-1">
-                  Send Inquiry
-                </button>
-              </form>
             </div>
-          </div>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer class="bg-apex-navy text-gray-400 py-16 border-t border-white/5">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-12">
-          <div class="flex items-center space-x-3 text-white">
-            <img src="/assets/logo.png" alt="Apex Computer Logo" class="h-8 w-auto">
-            <span class="text-2xl font-heading font-extrabold tracking-tight">Apex Computer</span>
-          </div>
-          <div class="flex space-x-12 font-semibold">
-            <a href="#" class="hover:text-apex-blue transition-colors">Privacy</a>
-            <a href="#" class="hover:text-apex-blue transition-colors">Terms</a>
-            <a href="#" class="hover:text-apex-blue transition-colors">Status</a>
-          </div>
+    <!-- Financing Section -->
+    <section id="financing" class="py-24 bg-apex-dark border-t border-white/5">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="font-montserrat font-bold text-4xl mb-6">INVEST IN YOUR VISION</h2>
+            <p class="text-apex-silver mb-12 max-w-2xl mx-auto">We offer flexible corporate investment plans to ensure your team has the tools they need today, paid for over time.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-apex-dark-card p-8 rounded-2xl border border-white/5 reveal-on-scroll">
+                    <p class="text-apex-blue font-bold mb-2">2-YEAR PLAN</p>
+                    <h3 class="text-2xl font-bold mb-4">Low Interest</h3>
+                    <p class="text-apex-silver text-sm mb-6">Perfect for rapid scaling startups.</p>
+                    <div class="text-3xl font-bold">From $249<span class="text-sm text-apex-silver font-normal">/mo</span></div>
+                </div>
+                <div class="bg-apex-dark-card p-8 rounded-2xl border-2 border-apex-blue reveal-on-scroll" style="transition-delay: 0.1s">
+                    <p class="bg-apex-blue text-apex-dark inline-block px-3 py-1 rounded-full text-xs font-bold mb-4">MOST POPULAR</p>
+                    <p class="text-apex-blue font-bold mb-2">3-YEAR PLAN</p>
+                    <h3 class="text-2xl font-bold mb-4">Optimized Balance</h3>
+                    <p class="text-apex-silver text-sm mb-6">Align technology refresh cycles with tax benefits.</p>
+                    <div class="text-3xl font-bold">From $189<span class="text-sm text-apex-silver font-normal">/mo</span></div>
+                </div>
+                <div class="bg-apex-dark-card p-8 rounded-2xl border border-white/5 reveal-on-scroll" style="transition-delay: 0.2s">
+                    <p class="text-apex-blue font-bold mb-2">5-YEAR PLAN</p>
+                    <h3 class="text-2xl font-bold mb-4">Enterprise Scaling</h3>
+                    <p class="text-apex-silver text-sm mb-6">Maximum cash flow flexibility for large deployments.</p>
+                    <div class="text-3xl font-bold">From $129<span class="text-sm text-apex-silver font-normal">/mo</span></div>
+                </div>
+            </div>
+            
+            <p class="mt-12 text-sm text-apex-silver opacity-60">* Based on total workstation value of $5,000 - $15,000. Subject to credit approval.</p>
         </div>
-        <div class="mt-16 pt-8 border-t border-white/5 text-center text-sm">
-          <p>&copy; 2024 Apex Computer Solutions. All rights reserved. Engineering excellence since 2012.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-black border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:row items-center justify-between gap-8">
+            <div class="flex items-center space-x-2">
+                <img src="/assets/logo_dark_theme.png" alt="Apex Logo" class="h-8 w-auto">
+                <span class="font-montserrat font-extrabold text-xl tracking-tighter">APEX<span class="text-apex-blue">COMPUTER</span></span>
+            </div>
+            <p class="text-apex-silver text-sm">© 2026 Apex Computer Systems Inc. All rights reserved.</p>
+            <div class="flex space-x-6 text-apex-silver">
+                <a href="#" class="hover:text-apex-blue">Twitter</a>
+                <a href="#" class="hover:text-apex-blue">LinkedIn</a>
+                <a href="#" class="hover:text-apex-blue">Instagram</a>
+            </div>
         </div>
-      </div>
     </footer>
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <script>
+        // Reveal on scroll logic
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+            el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700', 'ease-out');
+            observer.observe(el);
+        });
+    </script>
+</body>
 </html>
