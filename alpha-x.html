@@ -115,69 +115,60 @@
 
     <!-- Financing Calculator -->
     <section id="financing" class="py-24 bg-apex-navy/30 relative overflow-hidden">
-        <div class="max-w-4xl mx-auto px-6 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="text-center mb-16">
-                <h2 class="font-montserrat font-bold text-4xl mb-4 text-center">FINANCING CALCULATOR</h2>
-                <p class="text-apex-silver">Select your investment term to see your estimated monthly payments.</p>
+                <h2 class="font-montserrat font-bold text-4xl mb-4 text-center">INVESTMENT PLANS</h2>
+                <p class="text-apex-silver">Transparent financing for enterprise growth.</p>
             </div>
 
-            <div class="bg-apex-dark-card p-10 rounded-3xl border border-apex-blue/30 shadow-2xl reveal-on-scroll">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <label class="block text-sm font-bold text-apex-blue uppercase tracking-widest mb-4">Select Investment Term</label>
-                        <select id="term-select" class="w-full bg-apex-dark border border-white/10 text-white p-4 rounded-xl focus:outline-none focus:border-apex-blue transition-colors text-lg font-bold">
-                            <option value="2">2 Year Plan (24 Months)</option>
-                            <option value="3" selected>3 Year Plan (36 Months)</option>
-                            <option value="5">5 Year Plan (60 Months)</option>
+            <div class="bg-apex-dark-card p-8 md:p-12 rounded-3xl border border-apex-blue/30 shadow-2xl reveal-on-scroll">
+                <div class="grid lg:grid-cols-3 gap-12 items-start">
+                    <!-- Calculator Panel -->
+                    <div class="lg:col-span-1 bg-apex-dark p-8 rounded-2xl border border-white/5">
+                        <label class="block text-sm font-bold text-apex-blue uppercase tracking-widest mb-4">Select Term</label>
+                        <select id="term-select" class="w-full bg-apex-dark-card border border-white/10 text-white p-4 rounded-xl focus:outline-none focus:border-apex-blue transition-colors text-lg font-bold mb-8">
+                            <option value="2">2 Year Plan (24 Mo)</option>
+                            <option value="3" selected>3 Year Plan (36 Mo)</option>
+                            <option value="4">4 Year Plan (48 Mo)</option>
+                            <option value="5">5 Year Plan (60 Mo)</option>
                         </select>
-                        <p class="mt-6 text-sm text-apex-silver italic">
-                            * Estimated payments based on 8.9% APR. Subject to credit approval. 
-                        </p>
-                    </div>
-                    <div class="text-center md:text-right">
-                        <p class="text-apex-blue font-bold mb-2 uppercase tracking-widest">Monthly Payment</p>
-                        <div class="text-6xl md:text-7xl font-bold mb-4">
-                            $<span id="monthly-payment">174.45</span>
+                        <div class="text-center md:text-left border-t border-white/10 pt-8">
+                            <p class="text-apex-blue font-bold mb-2 uppercase tracking-widest text-sm">Monthly Payment</p>
+                            <div class="text-5xl font-bold mb-2">
+                                $<span id="monthly-payment">174.45</span>
+                            </div>
+                            <p class="text-apex-silver/60 text-sm italic">* 8.9% APR included</p>
                         </div>
-                        <p class="text-apex-silver">Total Price: $5,499</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Compare Options Section -->
-    <section class="py-24 bg-apex-dark">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-16 text-center">
-                <h2 class="font-montserrat font-bold text-4xl mb-4">INVESTMENT OPTIONS</h2>
-                <p class="text-apex-silver">Compare monthly payments across all available terms.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-apex-dark-card p-8 rounded-2xl border border-white/5 hover:border-apex-blue/30 transition-colors reveal-on-scroll">
-                    <p class="text-apex-blue font-bold mb-2 uppercase tracking-widest">24 Months</p>
-                    <h3 class="text-3xl font-bold mb-6">$250.91<span class="text-sm text-apex-silver font-normal">/mo</span></h3>
-                    <ul class="space-y-3 text-sm text-apex-silver mb-8">
-                        <li class="flex items-center"><svg class="h-4 w-4 text-apex-blue mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg> Fastest ownership path</li>
-                        <li class="flex items-center"><svg class="h-4 w-4 text-apex-blue mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg> Lowest total interest</li>
-                    </ul>
-                </div>
-                <div class="bg-apex-dark-card p-8 rounded-2xl border-2 border-apex-blue reveal-on-scroll" style="transition-delay: 0.1s">
-                    <p class="text-apex-blue font-bold mb-2 uppercase tracking-widest">36 Months</p>
-                    <h3 class="text-3xl font-bold mb-6">$174.45<span class="text-sm text-apex-silver font-normal">/mo</span></h3>
-                    <ul class="space-y-3 text-sm text-apex-silver mb-8">
-                        <li class="flex items-center"><svg class="h-4 w-4 text-apex-blue mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg> Balanced cash flow</li>
-                        <li class="flex items-center"><svg class="h-4 w-4 text-apex-blue mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg> Most popular choice</li>
-                    </ul>
-                </div>
-                <div class="bg-apex-dark-card p-8 rounded-2xl border border-white/5 hover:border-apex-blue/30 transition-colors reveal-on-scroll" style="transition-delay: 0.2s">
-                    <p class="text-apex-blue font-bold mb-2 uppercase tracking-widest">60 Months</p>
-                    <h3 class="text-3xl font-bold mb-6">$113.84<span class="text-sm text-apex-silver font-normal">/mo</span></h3>
-                    <ul class="space-y-3 text-sm text-apex-silver mb-8">
-                        <li class="flex items-center"><svg class="h-4 w-4 text-apex-blue mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg> Maximum liquidity</li>
-                        <li class="flex items-center"><svg class="h-4 w-4 text-apex-blue mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg> Flexible enterprise scaling</li>
-                    </ul>
+                    <!-- Comparison Grid -->
+                    <div class="lg:col-span-2">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="bg-apex-dark p-6 rounded-2xl border border-white/5 hover:border-apex-blue/30 transition-colors">
+                                <p class="text-apex-blue font-bold mb-1 uppercase tracking-widest text-xs">24 Months</p>
+                                <h3 class="text-2xl font-bold mb-4">$250.91<span class="text-xs text-apex-silver font-normal">/mo</span></h3>
+                                <p class="text-xs text-apex-silver">Fastest ownership path with minimal interest.</p>
+                            </div>
+                            <div class="bg-apex-dark p-6 rounded-2xl border-2 border-apex-blue">
+                                <div class="flex justify-between items-start mb-1">
+                                    <p class="text-apex-blue font-bold uppercase tracking-widest text-xs">36 Months</p>
+                                    <span class="bg-apex-blue text-apex-dark text-[10px] font-bold px-2 py-0.5 rounded-full">POPULAR</span>
+                                </div>
+                                <h3 class="text-2xl font-bold mb-4">$174.45<span class="text-xs text-apex-silver font-normal">/mo</span></h3>
+                                <p class="text-xs text-apex-silver">Optimal balance of cash flow and term length.</p>
+                            </div>
+                            <div class="bg-apex-dark p-6 rounded-2xl border border-white/5 hover:border-apex-blue/30 transition-colors">
+                                <p class="text-apex-blue font-bold mb-1 uppercase tracking-widest text-xs">48 Months</p>
+                                <h3 class="text-2xl font-bold mb-4">$136.21<span class="text-xs text-apex-silver font-normal">/mo</span></h3>
+                                <p class="text-xs text-apex-silver">Extended flexibility for scaling teams.</p>
+                            </div>
+                            <div class="bg-apex-dark p-6 rounded-2xl border border-white/5 hover:border-apex-blue/30 transition-colors">
+                                <p class="text-apex-blue font-bold mb-1 uppercase tracking-widest text-xs">60 Months</p>
+                                <h3 class="text-2xl font-bold mb-4">$113.84<span class="text-xs text-apex-silver font-normal">/mo</span></h3>
+                                <p class="text-xs text-apex-silver">Maximum liquidity and enterprise-grade scaling.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
